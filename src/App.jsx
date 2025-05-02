@@ -1,9 +1,9 @@
-import OrderFrom from "./components/OrderFrom";
+import Header from "./components/Header";
 
 function App() {
   return (
     <>
-     <OrderFrom/>
+      <Header/>
     </>
   );
 }
