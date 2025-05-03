@@ -1,8 +1,13 @@
-import React from 'react'
+import {useRef} from 'react'
 
-function Cart() {
+function Cart({showCart,handleCartCloseBtn}) {
+  const dialog = useRef();
+
+
+  showCart ? dialog.current.showModal() : null;
+
   return (
-    <dialog open className='cart'>
+    <dialog  ref={dialog} className='cart'>
       <h2>Your Cart</h2>
       <ul>
         <li className='cart-item'>
@@ -17,7 +22,7 @@ function Cart() {
       <h3 className='cart-total'>£20</h3>
       <div className="modal-actions">
         <form method="dialog">
-          <button><p className="text-button">Close</p></button>
+          <button onClick={handleCartCloseBtn}><p className="text-button">Close</p></button>
         </form>
         <button><p className="text-button">Go to Checkout</p></button>
       </div>
