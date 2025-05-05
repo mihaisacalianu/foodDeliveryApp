@@ -6,6 +6,8 @@ function Meals() {
   return (
     <div id="meals">
       <MealItem
+      id='m3'
+      name="Caesar Salad"
       src={caesarSalad}
       price={7.99}
       description="Romaine lettuce tossed in Caesar dressing, topped with croutons and parmesan shavings."
