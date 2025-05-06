@@ -6,10 +6,12 @@ function Header({handleCartClick}) {
   return (
     <header id='main-header'>
       <div id='title'>
-        <h1>Food To Go</h1>
         <img src={logo} alt="logo-image"/>
+        <h1>Food To Go</h1>
       </div>
-      <button onClick={handleCartClick}>Cart</button>
+      <nav>
+        <button onClick={handleCartClick}>Cart(0)</button>
+      </nav>
     </header>
   )
 }

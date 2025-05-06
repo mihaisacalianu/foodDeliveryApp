@@ -13,14 +13,11 @@ function Meals() {
       description="Romaine lettuce tossed in Caesar dressing, topped with croutons and parmesan shavings."
       />
       <MealItem
+      id='m4'
+      name="Spaghetti Carbonara"
       src={caesarSalad}
-      price={7.99}
-      description="Romaine lettuce tossed in Caesar dressing, topped with croutons and parmesan shavings."
-      />
-      <MealItem
-      src={caesarSalad}
-      price={7.99}
-      description="Romaine lettuce tossed in Caesar dressing, topped with croutons and parmesan shavings."
+      price={10.99}
+      description="Al dente spaghetti with a creamy sauce made from egg yolk, pecorino cheese, pancetta, and pepper."
       />
     </div>
   )

@@ -5,12 +5,11 @@ function MealItem({id,name,src,price,description}) {
 
   const [cartItems,setCartItems] = useContext(CartContext);
 
-  console.log(cartItems.items);
+  console.log(cartItems);
 
   function handleAddToCartBtn(id,name,price){
-    setCartItems(()=>
-       cartItems.items = [{id,name,price,quantity: 1}]
-    );
+    const meal = {...cartItems,items:[...cartItems.items ,{id,name,price,description,quantity: 1}]}
+    setCartItems(meal);
   }
 
   return (

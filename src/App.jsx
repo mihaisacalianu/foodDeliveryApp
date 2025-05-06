@@ -7,10 +7,12 @@ import  CartContext from "./components/states.jsx"
 function App() {
 
   const [cartShow, setCartShow] = useState(false);
-  const cartItems = useState(CartContext);
+  const [cartItems, setCartItems] = useState(
+    {items:[],
+    test: 'test'}
+  );
 
 
-  console.log(cartItems);
   function handleCartClick(){
     setCartShow((prev)=> !prev);
   }
@@ -20,7 +22,7 @@ function App() {
 
   return (
     <>
-      <CartContext.Provider value={cartItems}>
+      <CartContext.Provider value={[cartItems,setCartItems]}>
         <Header handleCartClick={handleCartClick}/>
         <Meals />
         <Cart
