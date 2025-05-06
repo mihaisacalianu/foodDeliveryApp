@@ -5,8 +5,6 @@ function Cart({showCart,handleCartCloseBtn}) {
   const dialog = useRef();
   const [cartItems,setCartItems] = useContext(CartContext);
 
-  console.log(cartItems);
-
   function handlePlus(id) {
     const updatedQuantity = {
       ...cartItems,
@@ -18,13 +16,25 @@ function Cart({showCart,handleCartCloseBtn}) {
   }
 
   function handleMinus(id){
+
     const updatedQuantity = {
       ...cartItems,
       items: cartItems.items.map(item =>
         item.id === id ? { ...item, quantity: item.quantity - 1 } : { ...item }
       )
     };
-    setCartItems(updatedQuantity);
+
+    // find the index of this specific meal
+    const index = updatedQuantity.items.findIndex((item) => item.id === id)
+
+    if(updatedQuantity.items[index].quantity < 1){
+      setCartItems({ ...cartItems, items: cartItems.items.filter(item =>
+          item.id !== id )
+      });
+    }else{
+
+      setCartItems(updatedQuantity);
+    }
   }
 
   // shows the cart modal when clicked
@@ -43,7 +53,7 @@ function Cart({showCart,handleCartCloseBtn}) {
             <div className="cart-item-actions">
             <button onClick={()=>handleMinus(item.id)}>-</button>
             <p>{item.quantity}</p>
-            <button onClick={()=>handlePlus(item.id)}>+</button>
+            <button onClick={()=>handlePlus(item.id,index)}>+</button>
             </div>
           </li>
             )
