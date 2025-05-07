@@ -1,11 +1,1 @@
-[
-  {"items":
-          [
-            {"id":"m12","name":"Pancake Stack","price":"8.99","description":"Fluffy pancakes stacked high, drizzled with maple syrup and topped with fresh berries.","quantity":1},
-            {"id":"m11","name":"Seafood Paella","price":"19.99","description":"A Spanish delicacy filled with saffron-infused rice, shrimp, mussels, and chorizo.","quantity":1}
-          ],
-  "customer":
-          {"name":"Oana Sacalianu","email":"mihaisacalianu@gmail.com","street":"61 Windstar Drive","postal-code":"RM15 5GU","city":"South Ockendon"},
-  "id":"106.87999126918201"
-}
-]
+[{"items":[{"id":"m14","name":"Beef Tacos","price":"9.99","description":"Three soft tortillas filled with seasoned beef, fresh salsa, cheese, and sour cream.","quantity":2},{"id":"m19","name":"Lemon Cheesecake","price":"6.99","description":"A creamy cheesecake with a tangy lemon flavor, served on a crumbly biscuit base.","quantity":2}],"customer":{"name":"Oana Sacalianu","email":"mihaisacalianu@gmail.com","street":"61 Windstar Drive","postal-code":"RM15 5GU","city":"South Ockendon"},"id":"527.7072938296811"},{"items":[{"id":"m14","name":"Beef Tacos","price":"9.99","description":"Three soft tortillas filled with seasoned beef, fresh salsa, cheese, and sour cream.","quantity":2},{"id":"m19","name":"Lemon Cheesecake","price":"6.99","description":"A creamy cheesecake with a tangy lemon flavor, served on a crumbly biscuit base.","quantity":2}],"customer":{"name":"Mihai-Dorin Sacalianu","email":"osacam20@gmail.com","street":"61 Windstar Drive","postal-code":"RM15 5GU","city":"South Ockendon"},"id":"356.63861401964004"}]

@@ -9,7 +9,7 @@ function App() {
   const [cartShow, setCartShow] = useState(false);
   const [cartItems, setCartItems] = useState(
     {items:[],
-    test: 'test'}
+    toPay: 0}
   );
 
 
@@ -17,6 +17,9 @@ function App() {
     setCartShow((prev)=> !prev);
   }
   function handleCartCloseBtn(){
+    setCartShow(false);
+  }
+  function handleFormCloseBtn(){
     setCartShow(false);
   }
 
@@ -28,6 +31,7 @@ function App() {
         <Cart
         showCart={cartShow}
         handleCartCloseBtn={handleCartCloseBtn}
+        handleFormCloseBtn={handleFormCloseBtn}
         />
       </CartContext.Provider>
     </>

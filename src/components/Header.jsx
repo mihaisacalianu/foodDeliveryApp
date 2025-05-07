@@ -14,7 +14,7 @@ function Header({handleCartClick}) {
         <h1>Food To Go</h1>
       </div>
       <nav>
-        <button onClick={handleCartClick}>Cart({cartItems[0].items.length > 0 ? cartItems[0].items.length : 0})</button>
+        <button className="text-button" onClick={handleCartClick}>Cart({cartItems[0].items.length > 0 ? cartItems[0].items.length : 0})</button>
       </nav>
     </header>
   )
