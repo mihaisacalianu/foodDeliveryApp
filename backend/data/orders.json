@@ -1,1 +1,11 @@
-[]
+[
+  {"items":
+          [
+            {"id":"m12","name":"Pancake Stack","price":"8.99","description":"Fluffy pancakes stacked high, drizzled with maple syrup and topped with fresh berries.","quantity":1},
+            {"id":"m11","name":"Seafood Paella","price":"19.99","description":"A Spanish delicacy filled with saffron-infused rice, shrimp, mussels, and chorizo.","quantity":1}
+          ],
+  "customer":
+          {"name":"Oana Sacalianu","email":"mihaisacalianu@gmail.com","street":"61 Windstar Drive","postal-code":"RM15 5GU","city":"South Ockendon"},
+  "id":"106.87999126918201"
+}
+]
